@@ -3,6 +3,8 @@ import "./index.css";
 import "./components/Netflix.css"
 import { EventHandling } from "./components/EventHandling";
 import { EventProps } from "./components/EventProps";
+import {State} from  "./components/hooks/State";
+
 const App = () => {
   console.log("ram");
   return (
@@ -13,7 +15,9 @@ const App = () => {
 
      {/* <EventHandling/> */}
 
-     <EventProps/>
+     <State/>
+
+     {/* //<EventProps/> */}
      </section>
   );
 };
